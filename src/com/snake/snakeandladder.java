@@ -12,6 +12,7 @@ public class snakeandladder {
 		
 
 		int pos = 0;
+		int count =0;
 		System.out.println("Single player is at postion "+pos);
 		
 		Random random = new Random();
@@ -36,8 +37,13 @@ public class snakeandladder {
 		
 			if(pos>100)
 				pos-= dieNumber;
+			
+			count++;
+			System.out.println("Position after rolling die: "+pos);
+		}
+		System.out.println("Final position of the player is : "+pos);
+		System.out.println("Number of times the die rolled: "+count);
 		}
 			
 	}
 
-}
